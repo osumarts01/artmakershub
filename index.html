@@ -14,7 +14,7 @@ content="ArtMakersHub helps digital artists discover the best drawing tablets, A
 <style>
 
 body{
-font-family:Georgia, serif;
+font-family: Georgia, serif;
 margin:0;
 background:#f3efe7;
 color:#333;
@@ -39,7 +39,7 @@ font-weight:600;
 /* SECTION */
 
 section{
-padding:80px 20px;
+padding:90px 20px;
 max-width:1100px;
 margin:auto;
 }
@@ -54,7 +54,7 @@ background:#f3efe7;
 display:flex;
 align-items:center;
 justify-content:space-between;
-gap:60px;
+gap:80px;
 flex-wrap:wrap;
 }
 
@@ -64,25 +64,44 @@ text-align:left;
 }
 
 .hero-text h1{
-font-size:42px;
-margin-bottom:20px;
+font-size:52px;
+line-height:1.15;
+margin-bottom:25px;
 }
+
+.hero-text p{
+font-size:18px;
+line-height:1.6;
+margin-bottom:35px;
+}
+
+.hero-text p:after{
+content:"";
+display:block;
+width:260px;
+height:1px;
+background:#cfcfcf;
+margin-top:25px;
+}
+
+/* IMAGE */
 
 .hero-image img{
 max-width:520px;
-border-radius:6px;
+border-radius:4px;
 }
 
 /* BUTTON */
 
 .btn{
 display:inline-block;
-margin-top:20px;
-padding:14px 30px;
+margin-top:10px;
+padding:14px 32px;
 background:#333;
 color:#fff;
 text-decoration:none;
 border-radius:4px;
+font-size:16px;
 }
 
 /* TOOLS */
@@ -97,7 +116,7 @@ padding:30px;
 margin:25px auto;
 max-width:420px;
 border-radius:6px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
 /* TESTIMONIALS */
