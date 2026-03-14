@@ -13,6 +13,8 @@ content="ArtMakersHub helps digital artists discover the best drawing tablets, A
 
 <style>
 
+/* GLOBAL */
+
 body{
 font-family: Georgia, serif;
 margin:0;
@@ -21,11 +23,17 @@ color:#333;
 text-align:center;
 }
 
+section{
+padding:90px 20px;
+max-width:1100px;
+margin:auto;
+}
+
 /* NAVBAR */
 
 nav{
 background:#f3efe7;
-padding:20px;
+padding:22px;
 border-bottom:1px solid #ddd;
 }
 
@@ -34,14 +42,6 @@ color:#333;
 margin:0 18px;
 text-decoration:none;
 font-weight:600;
-}
-
-/* SECTION */
-
-section{
-padding:90px 20px;
-max-width:1100px;
-margin:auto;
 }
 
 /* HERO */
@@ -85,7 +85,7 @@ background:#cfcfcf;
 margin-top:25px;
 }
 
-/* IMAGE */
+/* HERO IMAGE */
 
 .hero-image img{
 max-width:520px;
@@ -96,7 +96,6 @@ border-radius:4px;
 
 .btn{
 display:inline-block;
-margin-top:10px;
 padding:14px 32px;
 background:#333;
 color:#fff;
@@ -105,17 +104,66 @@ border-radius:4px;
 font-size:16px;
 }
 
+/* ABOUT SECTION (DARK BLOCK LIKE CANVA) */
+
+.about-section{
+background:#3a3a3a;
+color:#fff;
+padding:90px 20px;
+}
+
+.about-section h2{
+font-size:36px;
+margin-bottom:25px;
+}
+
+.about-text{
+max-width:800px;
+margin:auto;
+line-height:1.7;
+font-size:18px;
+}
+
+.about-columns{
+display:flex;
+justify-content:center;
+gap:80px;
+margin-top:60px;
+flex-wrap:wrap;
+}
+
+.about-box{
+max-width:350px;
+}
+
+.about-box h3{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.about-box hr{
+border:none;
+height:1px;
+background:#aaa;
+margin:15px 0 20px;
+}
+
 /* TOOLS */
 
 .tools{
 background:#f3efe7;
 }
 
+.tool-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
 .tool-card{
 background:#fff;
 padding:30px;
-margin:25px auto;
-max-width:420px;
 border-radius:6px;
 box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
@@ -132,6 +180,12 @@ margin:20px auto;
 font-style:italic;
 }
 
+/* FAQ */
+
+section h3{
+margin-top:35px;
+}
+
 /* FOOTER */
 
 footer{
@@ -144,6 +198,26 @@ footer a{
 color:#333;
 margin:0 12px;
 text-decoration:none;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.hero-container{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text{
+text-align:center;
+}
+
+.hero-text p:after{
+margin-left:auto;
+margin-right:auto;
+}
+
 }
 
 </style>
@@ -197,29 +271,47 @@ improve and sell their artwork online.
 
 
 
-<section>
+<section class="about-section">
 
-<h2>Welcome to ArtMakersHub</h2>
+<h2>Welcome to Art Makers Hub</h2>
 
-<p>
-ArtMakersHub is a resource platform for digital artists and creators.
-We help artists discover the best tools, software and learning resources
-to improve their creativity and grow their online presence.
+<p class="about-text">
+ArtMakersHub is a resource platform for digital artists and creators. We help
+artists discover the best tools, software, and learning resources to improve
+their creativity and grow their online presence. Our goal is to simplify the
+search for the right art tools by providing curated recommendations,
+tutorials, and guides for beginners and professionals.
 </p>
+
+<div class="about-columns">
+
+<div class="about-box">
 
 <h3>Our Mission</h3>
 
+<hr>
+
 <p>
 Our mission is to help artists find the best creative tools and resources
-that make digital art easier and more accessible.
+that make digital art easier, faster, and more accessible.
 </p>
+
+</div>
+
+<div class="about-box">
 
 <h3>Our Vision</h3>
 
+<hr>
+
 <p>
 Our vision is to build a trusted platform where artists can discover tools,
-learn new techniques and grow their creative careers online.
+learn new techniques, and grow their creative careers online.
 </p>
+
+</div>
+
+</div>
 
 </section>
 
@@ -228,6 +320,8 @@ learn new techniques and grow their creative careers online.
 <section class="tools">
 
 <h2>Featured Tools for Artists</h2>
+
+<div class="tool-grid">
 
 <div class="tool-card">
 
@@ -239,7 +333,6 @@ learn new techniques and grow their creative careers online.
 
 </div>
 
-
 <div class="tool-card">
 
 <h3>AI Art Generators</h3>
@@ -250,7 +343,6 @@ learn new techniques and grow their creative careers online.
 
 </div>
 
-
 <div class="tool-card">
 
 <h3>Graphic Design Software</h3>
@@ -258,6 +350,8 @@ learn new techniques and grow their creative careers online.
 <p>Professional software for digital illustration and design.</p>
 
 <a href="/tools.html" class="btn">Explore Tools</a>
+
+</div>
 
 </div>
 
@@ -350,7 +444,6 @@ websites.
 <p>© 2026 ArtMakersHub</p>
 
 </footer>
-
 
 
 </body>
