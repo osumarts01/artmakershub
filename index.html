@@ -46,17 +46,11 @@ font-weight:600;
 
 /* HERO */
 
-.hero{
-background:#f3efe7;
-}
-
 .hero-container{
 display:flex;
 align-items:center;
 justify-content:space-between;
 gap:80px;
-max-width:1100px;
-margin:auto;
 }
 
 .hero-text{
@@ -85,8 +79,6 @@ background:#cfcfcf;
 margin-top:25px;
 }
 
-/* HERO IMAGE */
-
 .hero-image img{
 max-width:520px;
 border-radius:4px;
@@ -104,7 +96,7 @@ border-radius:4px;
 font-size:16px;
 }
 
-/* ABOUT SECTION (DARK BLOCK LIKE CANVA) */
+/* ABOUT SECTION */
 
 .about-section{
 background:#3a3a3a;
@@ -150,10 +142,6 @@ margin:15px 0 20px;
 
 /* TOOLS */
 
-.tools{
-background:#f3efe7;
-}
-
 .tool-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -167,11 +155,14 @@ padding:30px;
 border-radius:6px;
 box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
+
 .tool-card img{
 width:100%;
 border-radius:6px;
 margin-bottom:15px;
 }
+
+/* TUTORIALS */
 
 .tutorials{
 background:#3a3a3a;
@@ -206,7 +197,8 @@ margin-bottom:20px;
 .tutorial-text p{
 line-height:1.7;
 margin-bottom:30px;
-}  
+}
+
 /* TESTIMONIALS */
 
 .testimonials{
@@ -260,7 +252,6 @@ width:80px;
 height:80px;
 border-radius:50%;
 object-fit:cover;
-flex-shrink:0;
 }
 
 .testimonial-item p{
@@ -269,13 +260,62 @@ line-height:1.6;
 }
 
 .testimonial-item strong{
-font-size:22x;
+font-size:22px;
 }
 
 /* FAQ */
 
-section h3{
-margin-top:35px;
+.faq-section{
+display:grid;
+grid-template-columns:1fr 1.3fr;
+max-width:1100px;
+margin:auto;
+padding:0;
+}
+
+.faq-left{
+padding:100px 40px;
+text-align:left;
+}
+
+.faq-left h2{
+font-size:50px;
+line-height:1.1;
+margin-bottom:40px;
+}
+
+.faq-left img{
+width:260px;
+margin-top:20px;
+}
+
+.faq-right{
+background:#e7ddd2;
+padding:80px 60px;
+text-align:left;
+}
+
+.faq-item{
+margin-bottom:35px;
+padding-bottom:25px;
+border-bottom:1px solid #cfc4ba;
+}
+
+.faq-item:last-child{
+border-bottom:none;
+}
+
+.faq-item h3{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.faq-item p{
+line-height:1.7;
+}
+
+.faq-cta{
+margin-top:25px;
 }
 
 /* FOOTER */
@@ -301,13 +341,16 @@ flex-direction:column;
 text-align:center;
 }
 
-.hero-text{
-text-align:center;
+.tutorial-container{
+flex-direction:column;
 }
 
-.hero-text p:after{
-margin-left:auto;
-margin-right:auto;
+.testimonial-container{
+grid-template-columns:1fr;
+}
+
+.faq-section{
+grid-template-columns:1fr;
 }
 
 }
@@ -316,9 +359,7 @@ margin-right:auto;
 
 </head>
 
-
 <body>
-
 
 <nav>
 
@@ -330,8 +371,6 @@ margin-right:auto;
 <a href="/contact.html">Contact</a>
 
 </nav>
-
-
 
 <section class="hero">
 
@@ -350,18 +389,13 @@ improve and sell their artwork online.
 
 </div>
 
-
 <div class="hero-image">
-
 <img src="images/hero.jpg">
-
 </div>
 
 </div>
 
 </section>
-
-
 
 <section class="about-section">
 
@@ -369,45 +403,30 @@ improve and sell their artwork online.
 
 <p class="about-text">
 ArtMakersHub is a resource platform for digital artists and creators. We help
-artists discover the best tools, software, and learning resources to improve
-their creativity and grow their online presence. Our goal is to simplify the
-search for the right art tools by providing curated recommendations,
-tutorials, and guides for beginners and professionals.
+artists discover the best tools, software, and learning resources.
 </p>
 
 <div class="about-columns">
 
 <div class="about-box">
-
 <h3>Our Mission</h3>
-
 <hr>
-
 <p>
-Our mission is to help artists find the best creative tools and resources
-that make digital art easier, faster, and more accessible.
+Help artists find the best creative tools and resources.
 </p>
-
 </div>
 
 <div class="about-box">
-
 <h3>Our Vision</h3>
-
 <hr>
-
 <p>
-Our vision is to build a trusted platform where artists can discover tools,
-learn new techniques, and grow their creative careers online.
+Build a trusted platform where artists grow their creative careers.
 </p>
-
 </div>
 
 </div>
 
 </section>
-
-
 
 <section class="tools">
 
@@ -416,42 +435,26 @@ learn new techniques, and grow their creative careers online.
 <div class="tool-grid">
 
 <div class="tool-card">
-
 <img src="images/tablet.jpg">
-
 <h3>Drawing Tablets</h3>
-
 <a href="/tools.html" class="btn">Explore Tools</a>
-
 </div>
 
-
 <div class="tool-card">
-
 <img src="images/ai.jpg">
-
 <h3>AI Art Generators</h3>
-
 <a href="/tools.html" class="btn">Explore Tools</a>
-
 </div>
 
-
 <div class="tool-card">
-
 <img src="images/design.jpg">
-
-<h3>Graphic Design Softwares</h3>
-
+<h3>Graphic Design Software</h3>
 <a href="/tools.html" class="btn">Explore Tools</a>
-
 </div>
 
 </div>
 
 </section>
-
-
 
 <section class="tutorials">
 
@@ -467,8 +470,6 @@ learn new techniques, and grow their creative careers online.
 
 <p>
 Explore tutorials, guides, and tips to improve your digital art skills.
-We share tool reviews, creative techniques, and step-by-step resources
-to help artists create better artwork and grow online.
 </p>
 
 <a class="btn" href="/blog.html">Read Tutorials</a>
@@ -478,8 +479,6 @@ to help artists create better artwork and grow online.
 </div>
 
 </section>
-
-
 
 <section class="testimonials">
 
@@ -497,8 +496,7 @@ to help artists create better artwork and grow online.
 
 <div>
 <p>
-“ArtMakersHub helped me discover the best tools for digital illustration.
-The tutorials are simple and very useful.”
+“ArtMakersHub helped me discover the best tools for digital illustration.”
 </p>
 
 <strong>Emily R.</strong>
@@ -506,15 +504,13 @@ The tutorials are simple and very useful.”
 
 </div>
 
-
 <div class="testimonial-item">
 
 <img src="images/sophia.jpg">
 
 <div>
 <p>
-“I found amazing AI art tools through ArtMakersHub.
-It saved me hours of searching online.”
+“I found amazing AI art tools through ArtMakersHub.”
 </p>
 
 <strong>Sophia L.</strong>
@@ -522,15 +518,13 @@ It saved me hours of searching online.”
 
 </div>
 
-
 <div class="testimonial-item">
 
 <img src="images/amit.jpg">
 
 <div>
 <p>
-“The guides on ArtMakersHub are perfect for beginners
-who want to start their digital art journey.”
+“The guides on ArtMakersHub are perfect for beginners starting digital art.”
 </p>
 
 <strong>Amit S.</strong>
@@ -544,11 +538,19 @@ who want to start their digital art journey.”
 
 </section>
 
+<section class="faq-section">
 
+<div class="faq-left">
 
-<section>
+<h2>Frequently<br>Asked<br>Questions</h2>
 
-<h2>Frequently Asked Questions</h2>
+<img src="images/faq.png">
+
+</div>
+
+<div class="faq-right">
+
+<div class="faq-item">
 
 <h3>What tools do digital artists need?</h3>
 
@@ -557,23 +559,39 @@ Digital artists usually need drawing tablets, graphic design software
 and creative apps.
 </p>
 
+</div>
+
+<div class="faq-item">
+
 <h3>What is the best drawing tablet for beginners?</h3>
 
 <p>
-Beginners should start with affordable tablets compatible with popular
-design software.
+Beginners often start with affordable drawing tablets compatible with popular software.
 </p>
+
+</div>
+
+<div class="faq-item">
 
 <h3>Can I sell digital art online?</h3>
 
 <p>
-Yes, many artists sell digital artwork through marketplaces and personal
-websites.
+Yes. Artists sell digital artwork through marketplaces and personal websites.
 </p>
 
+<p>
+Get the latest art tutorials and creative tools delivered to your inbox.
+</p>
+
+<div class="faq-cta">
+<a class="btn" href="#">Get Art Tips & Tool Updates</a>
+</div>
+
+</div>
+
+</div>
+
 </section>
-
-
 
 <footer>
 
@@ -593,7 +611,6 @@ websites.
 <p>© 2026 ArtMakersHub</p>
 
 </footer>
-
 
 </body>
 </html>
