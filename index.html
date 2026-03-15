@@ -15,12 +15,21 @@ content="ArtMakersHub helps digital artists discover the best drawing tablets, A
 
 /* GLOBAL */
 
+*{
+box-sizing:border-box;
+}
+
 body{
 font-family: Georgia, serif;
 margin:0;
 background:#f3efe7;
 color:#333;
 text-align:center;
+}
+
+img{
+max-width:100%;
+display:block;
 }
 
 section{
@@ -80,7 +89,6 @@ margin-top:25px;
 }
 
 .hero-image img{
-max-width:520px;
 border-radius:4px;
 }
 
@@ -157,7 +165,6 @@ box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
 .tool-card img{
-width:100%;
 border-radius:6px;
 margin-bottom:15px;
 }
@@ -179,11 +186,6 @@ max-width:1100px;
 margin:auto;
 }
 
-.tutorial-image img{
-max-width:520px;
-border-radius:6px;
-}
-
 .tutorial-text{
 max-width:480px;
 text-align:left;
@@ -203,8 +205,7 @@ margin-bottom:30px;
 
 .testimonials{
 background:#f3efe7;
-padding:0;
-max-width:100%;
+padding:90px 20px;
 }
 
 .testimonial-container{
@@ -215,10 +216,7 @@ margin:auto;
 }
 
 .testimonial-title{
-padding:100px 40px;
-display:flex;
-align-items:flex-start;
-justify-content:flex-start;
+padding:60px 20px;
 text-align:left;
 }
 
@@ -230,7 +228,7 @@ line-height:1.2;
 
 .testimonial-list{
 background:#e7ddd2;
-padding:80px 60px;
+padding:60px;
 text-align:left;
 }
 
@@ -270,11 +268,10 @@ display:grid;
 grid-template-columns:1fr 1.3fr;
 max-width:1100px;
 margin:auto;
-padding:0;
 }
 
 .faq-left{
-padding:100px 40px;
+padding:80px 40px;
 text-align:left;
 }
 
@@ -324,6 +321,7 @@ footer{
 background:#f3efe7;
 padding:60px 20px;
 border-top:1px solid #ddd;
+text-align:center;
 }
 
 footer a{
