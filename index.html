@@ -15,21 +15,12 @@ content="ArtMakersHub helps digital artists discover the best drawing tablets, A
 
 /* GLOBAL */
 
-*{
-box-sizing:border-box;
-}
-
 body{
 font-family: Georgia, serif;
 margin:0;
 background:#f3efe7;
 color:#333;
 text-align:center;
-}
-
-img{
-max-width:100%;
-display:block;
 }
 
 section{
@@ -55,11 +46,17 @@ font-weight:600;
 
 /* HERO */
 
+.hero{
+background:#f3efe7;
+}
+
 .hero-container{
 display:flex;
 align-items:center;
 justify-content:space-between;
 gap:80px;
+max-width:1100px;
+margin:auto;
 }
 
 .hero-text{
@@ -88,7 +85,10 @@ background:#cfcfcf;
 margin-top:25px;
 }
 
+/* HERO IMAGE */
+
 .hero-image img{
+max-width:520px;
 border-radius:4px;
 }
 
@@ -104,7 +104,7 @@ border-radius:4px;
 font-size:16px;
 }
 
-/* ABOUT SECTION */
+/* ABOUT SECTION (DARK BLOCK LIKE CANVA) */
 
 .about-section{
 background:#3a3a3a;
@@ -150,6 +150,10 @@ margin:15px 0 20px;
 
 /* TOOLS */
 
+.tools{
+background:#f3efe7;
+}
+
 .tool-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -164,155 +168,22 @@ border-radius:6px;
 box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
-.tool-card img{
-border-radius:6px;
-margin-bottom:15px;
-}
-
-/* TUTORIALS */
-
-.tutorials{
-background:#3a3a3a;
-color:#fff;
-padding:90px 20px;
-}
-
-.tutorial-container{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:60px;
-max-width:1100px;
-margin:auto;
-}
-
-.tutorial-text{
-max-width:480px;
-text-align:left;
-}
-
-.tutorial-text h2{
-font-size:38px;
-margin-bottom:20px;
-}
-
-.tutorial-text p{
-line-height:1.7;
-margin-bottom:30px;
-}
-
 /* TESTIMONIALS */
 
 .testimonials{
 background:#f3efe7;
-padding:90px 20px;
 }
 
-.testimonial-container{
-display:grid;
-grid-template-columns:1fr 1.4fr;
-max-width:1100px;
-margin:auto;
-}
-
-.testimonial-title{
-padding:60px 20px;
-text-align:left;
-}
-
-.testimonial-title h2{
-font-size:50px;
-color:#b79c89;
-line-height:1.2;
-}
-
-.testimonial-list{
-background:#e7ddd2;
-padding:60px;
-text-align:left;
-}
-
-.testimonial-item{
-display:flex;
-align-items:center;
-gap:25px;
-margin-bottom:40px;
-padding-bottom:35px;
-border-bottom:1px solid #cfc4ba;
-}
-
-.testimonial-item:last-child{
-border-bottom:none;
-}
-
-.testimonial-item img{
-width:80px;
-height:80px;
-border-radius:50%;
-object-fit:cover;
-}
-
-.testimonial-item p{
-margin:0 0 10px;
-line-height:1.6;
-}
-
-.testimonial-item strong{
-font-size:22px;
+.testimonials p{
+max-width:700px;
+margin:20px auto;
+font-style:italic;
 }
 
 /* FAQ */
 
-.faq-section{
-display:grid;
-grid-template-columns:1fr 1.3fr;
-max-width:1100px;
-margin:auto;
-}
-
-.faq-left{
-padding:80px 40px;
-text-align:left;
-}
-
-.faq-left h2{
-font-size:50px;
-line-height:1.1;
-margin-bottom:40px;
-}
-
-.faq-left img{
-width:260px;
-margin-top:20px;
-}
-
-.faq-right{
-background:#e7ddd2;
-padding:80px 60px;
-text-align:left;
-}
-
-.faq-item{
-margin-bottom:35px;
-padding-bottom:25px;
-border-bottom:1px solid #cfc4ba;
-}
-
-.faq-item:last-child{
-border-bottom:none;
-}
-
-.faq-item h3{
-font-size:24px;
-margin-bottom:10px;
-}
-
-.faq-item p{
-line-height:1.7;
-}
-
-.faq-cta{
-margin-top:25px;
+section h3{
+margin-top:35px;
 }
 
 /* FOOTER */
@@ -321,7 +192,6 @@ footer{
 background:#f3efe7;
 padding:60px 20px;
 border-top:1px solid #ddd;
-text-align:center;
 }
 
 footer a{
@@ -339,16 +209,13 @@ flex-direction:column;
 text-align:center;
 }
 
-.tutorial-container{
-flex-direction:column;
+.hero-text{
+text-align:center;
 }
 
-.testimonial-container{
-grid-template-columns:1fr;
-}
-
-.faq-section{
-grid-template-columns:1fr;
+.hero-text p:after{
+margin-left:auto;
+margin-right:auto;
 }
 
 }
@@ -357,7 +224,9 @@ grid-template-columns:1fr;
 
 </head>
 
+
 <body>
+
 
 <nav>
 
@@ -369,6 +238,8 @@ grid-template-columns:1fr;
 <a href="/contact.html">Contact</a>
 
 </nav>
+
+
 
 <section class="hero">
 
@@ -387,44 +258,64 @@ improve and sell their artwork online.
 
 </div>
 
+
 <div class="hero-image">
+
 <img src="images/hero.jpg">
+
 </div>
 
 </div>
 
 </section>
 
+
+
 <section class="about-section">
 
-<h2>Welcome to ArtMakersHub</h2>
+<h2>Welcome to Art Makers Hub</h2>
 
 <p class="about-text">
 ArtMakersHub is a resource platform for digital artists and creators. We help
-artists discover the best tools, software, and learning resources.
+artists discover the best tools, software, and learning resources to improve
+their creativity and grow their online presence. Our goal is to simplify the
+search for the right art tools by providing curated recommendations,
+tutorials, and guides for beginners and professionals.
 </p>
 
 <div class="about-columns">
 
 <div class="about-box">
+
 <h3>Our Mission</h3>
+
 <hr>
+
 <p>
-Help artists find the best creative tools and resources.
+Our mission is to help artists find the best creative tools and resources
+that make digital art easier, faster, and more accessible.
 </p>
+
 </div>
 
 <div class="about-box">
+
 <h3>Our Vision</h3>
+
 <hr>
+
 <p>
-Build a trusted platform where artists grow their creative careers.
+Our vision is to build a trusted platform where artists can discover tools,
+learn new techniques, and grow their creative careers online.
 </p>
+
 </div>
 
 </div>
 
 </section>
+
+
 
 <section class="tools">
 
@@ -433,122 +324,82 @@ Build a trusted platform where artists grow their creative careers.
 <div class="tool-grid">
 
 <div class="tool-card">
-<img src="images/tablet.jpg">
+
 <h3>Drawing Tablets</h3>
+
+<p>Discover the best drawing tablets used by digital artists.</p>
+
 <a href="/tools.html" class="btn">Explore Tools</a>
+
 </div>
 
 <div class="tool-card">
-<img src="images/ai.jpg">
+
 <h3>AI Art Generators</h3>
+
+<p>Explore powerful AI tools for digital art creation.</p>
+
 <a href="/tools.html" class="btn">Explore Tools</a>
+
 </div>
 
 <div class="tool-card">
-<img src="images/design.jpg">
+
 <h3>Graphic Design Software</h3>
+
+<p>Professional software for digital illustration and design.</p>
+
 <a href="/tools.html" class="btn">Explore Tools</a>
+
 </div>
 
 </div>
 
 </section>
 
-<section class="tutorials">
 
-<div class="tutorial-container">
 
-<div class="tutorial-image">
-<img src="images/tutorial.jpg">
-</div>
-
-<div class="tutorial-text">
+<section>
 
 <h2>Art Tutorials & Guides</h2>
 
 <p>
-Explore tutorials, guides, and tips to improve your digital art skills.
+Explore tutorials, guides and tips to improve your digital art skills.
+We share creative techniques and resources for artists.
 </p>
 
 <a class="btn" href="/blog.html">Read Tutorials</a>
 
-</div>
-
-</div>
-
 </section>
+
+
 
 <section class="testimonials">
 
-<div class="testimonial-container">
-
-<div class="testimonial-title">
 <h2>What Artists Say</h2>
-</div>
 
-<div class="testimonial-list">
-
-<div class="testimonial-item">
-
-<img src="images/emily.jpg">
-
-<div>
 <p>
 “ArtMakersHub helped me discover the best tools for digital illustration.”
+– Emily R.
 </p>
 
-<strong>Emily R.</strong>
-</div>
-
-</div>
-
-<div class="testimonial-item">
-
-<img src="images/sophia.jpg">
-
-<div>
 <p>
 “I found amazing AI art tools through ArtMakersHub.”
+– Sophia L.
 </p>
 
-<strong>Sophia L.</strong>
-</div>
-
-</div>
-
-<div class="testimonial-item">
-
-<img src="images/amit.jpg">
-
-<div>
 <p>
-“The guides on ArtMakersHub are perfect for beginners starting digital art.”
+“The guides are perfect for beginners starting digital art.”
+– Amit S.
 </p>
-
-<strong>Amit S.</strong>
-</div>
-
-</div>
-
-</div>
-
-</div>
 
 </section>
 
-<section class="faq-section">
 
-<div class="faq-left">
 
-<h2>Frequently<br>Asked<br>Questions</h2>
+<section>
 
-<img src="images/faq.png">
-
-</div>
-
-<div class="faq-right">
-
-<div class="faq-item">
+<h2>Frequently Asked Questions</h2>
 
 <h3>What tools do digital artists need?</h3>
 
@@ -557,39 +408,23 @@ Digital artists usually need drawing tablets, graphic design software
 and creative apps.
 </p>
 
-</div>
-
-<div class="faq-item">
-
 <h3>What is the best drawing tablet for beginners?</h3>
 
 <p>
-Beginners often start with affordable drawing tablets compatible with popular software.
+Beginners should start with affordable tablets compatible with popular
+design software.
 </p>
-
-</div>
-
-<div class="faq-item">
 
 <h3>Can I sell digital art online?</h3>
 
 <p>
-Yes. Artists sell digital artwork through marketplaces and personal websites.
+Yes, many artists sell digital artwork through marketplaces and personal
+websites.
 </p>
-
-<p>
-Get the latest art tutorials and creative tools delivered to your inbox.
-</p>
-
-<div class="faq-cta">
-<a class="btn" href="#">Get Art Tips & Tool Updates</a>
-</div>
-
-</div>
-
-</div>
 
 </section>
+
+
 
 <footer>
 
@@ -609,6 +444,7 @@ Get the latest art tutorials and creative tools delivered to your inbox.
 <p>© 2026 ArtMakersHub</p>
 
 </footer>
+
 
 </body>
 </html>
