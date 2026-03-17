@@ -109,3 +109,69 @@ text-align:center;
 margin-top:40px;
 opacity:0.8;
 }
+.article-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.article-hero img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.buy-btn {
+  background: #ff6600;
+  color: #fff;
+  padding: 8px 14px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.buy-btn.large {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card img {
+  width: 100%;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.pros-cons {
+  display: flex;
+  gap: 20px;
+}
+
+.pros, .cons {
+  flex: 1;
+}
+
+.related ul {
+  padding-left: 20px;
+}
