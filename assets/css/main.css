@@ -2294,3 +2294,12 @@ button,
 	border: 0;
 	border-top: 1px solid #ddd;
 }
+
+/* FIX HR LINE VISIBILITY */
+
+.blog-list hr {
+	border: none;
+	height: 1px;
+	background-color: #ccc;
+	margin: 25px 0;
+}
