@@ -2271,3 +2271,26 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+/* BLOG PAGE FIX */
+
+.blog-list {
+	max-width: 800px;
+}
+
+.blog-list h2 {
+	margin-bottom: 10px;
+	font-size: 1.4em;
+}
+
+.blog-list p {
+	margin-bottom: 20px;
+	line-height: 1.6;
+	color: #666;
+}
+
+.blog-list hr {
+	margin: 30px 0;
+	border: 0;
+	border-top: 1px solid #ddd;
+}
