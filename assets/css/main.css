@@ -2304,3 +2304,31 @@ button,
 	border: none !important;
 	margin: 30px 0 !important;
 }
+
+.qa-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.qa-text {
+  flex: 1;
+}
+
+.qa-image {
+  flex: 1;
+}
+
+.qa-image img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 12px;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .qa-container {
+    flex-direction: column;
+  }
+}
