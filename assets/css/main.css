@@ -2332,3 +2332,16 @@ button,
     flex-direction: column;
   }
 }
+
+.spacing-small {
+  margin-bottom: 10px;
+}
+
+.img-cover {
+  max-height: 260px;
+  object-fit: cover;
+}
+
+.spacing-large {
+  margin: 40px 0;
+}
